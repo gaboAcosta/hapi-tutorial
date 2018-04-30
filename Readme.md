@@ -6,7 +6,7 @@ You can go through the branches and follow on the basic project of creating a Ha
 
 Summary:
 
-1. Setting up the Hapi Server
+1. [Setting up the Hapi Server](https://github.com/gaboAcosta/hapi-tutorial/pull/1)
 2. Creating a basic route import plugin
 3. Adding hapi-swagger
 4. Adding a basic Sequelize setup plugin
