@@ -10,11 +10,14 @@ module.exports = {
       path: '/',
       config: {
         tags:['api'],
-        handler(req){
+        async handler(req){
+          const { db } = server
           const { name } = req.payload
-          return {
-            message: `Hello ${name}!!`,
-          }
+          const model = db.models['sample']
+          const sample = await model.create({ name })
+
+          //If you return the model Hapi freaks out, so we return JSON
+          return sample.get({ plain: true })
         },
         response: {
           modify: true,
@@ -22,7 +25,8 @@ module.exports = {
             stripUnknown: true,
           },
           schema: Joi.object().keys({
-            message: Joi.string()
+            id: Joi.number().required(),
+            name: Joi.string().required()
           })
         },
         validate: {
