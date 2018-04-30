@@ -9,5 +9,5 @@ Summary:
 1. [Setting up the Hapi Server](https://github.com/gaboAcosta/hapi-tutorial/pull/1)
 2. [Creating a basic route import plugin](https://github.com/gaboAcosta/hapi-tutorial/pull/2)
 3. [Adding hapi-swagger](https://github.com/gaboAcosta/hapi-tutorial/pull/3)
-4. Adding a basic Sequelize setup plugin
+4. [Adding a basic Sequelize setup plugin](https://github.com/gaboAcosta/hapi-tutorial/pull/4)
 5. Setup tests
